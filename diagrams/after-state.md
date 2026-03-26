@@ -9,7 +9,7 @@ graph TD
     MKT[API marketplace buyers] --> GW
     ENT[Enterprise clients — own front-ends] --> GW
 
-    GW[API gateway + auth per service]
+    GW[API gateway]
 
     GW --> ORCH[Orchestrator — former monolith, routing only]
 
@@ -44,9 +44,6 @@ graph TD
 
 **Why the monolith became an orchestrator, not deleted:**
 Rewriting from scratch would have taken 2+ years with massive risk. Keeping the monolith as a thin routing layer meant we could decompose incrementally, one service at a time, with rollback capability at each step.
-
-**Why auth per service, not a central auth gateway:**
-Central auth creates a single point of failure and doesn't support the marketplace model. Different marketplace clients need access to different service combinations. Per-service auth enables granular access control.
 
 **Why the validator is a cross-cutting service, not embedded per microservice:**
 Job conflict detection requires a global view of what's running across the tenant. Embedding validation in each service would mean each one makes concurrency decisions without knowing what other services are doing. A dedicated validator has the full picture.
