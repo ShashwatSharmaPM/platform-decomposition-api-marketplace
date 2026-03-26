@@ -25,7 +25,7 @@ graph TB
             RV["Retail visualization<br/><i>Image processing</i>"]
             RPT["Reporting<br/><i>Read-heavy</i>"]
             CFG["Config mgmt<br/><i>Tenant settings</i>"]
-            MORE["+14 more services<br/><i>No team owns these</i>"]
+            MORE["Other services<br/><i>No team owns these</i>"]
         end
 
         JS <-.-> DC
