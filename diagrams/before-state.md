@@ -17,7 +17,7 @@ graph TD
         SVC5[Retail visualization — image processing]
         SVC6[Reporting — read-heavy queries]
         SVC7[Configuration management]
-        SVC8[14+ more services — all unowned]
+        SVC8[Other services — all unowned]
     end
 
     MONO --> CUST[Customers — full platform or nothing]
