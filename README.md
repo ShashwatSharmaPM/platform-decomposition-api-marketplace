@@ -5,8 +5,11 @@
 ## Context
 
 **Company type**: Global supply chain SaaS platform (demand and supply planning)
+
 **My role**: Lead Product Manager, APIs
+
 **Team**: Started with 3 (me, a senior architect, a junior developer). Grew to 18 (me leading 14 devs and 3 PMs).
+
 **Timeline**: ~1 year for the core decomposition; marketplace launched alongside
 
 ---
