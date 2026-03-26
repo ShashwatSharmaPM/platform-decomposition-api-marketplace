@@ -27,21 +27,6 @@ graph TD
     UM --> VAL
 ```
 
-### Marketplace modules (purchasable independently)
-
-```mermaid
-%%{init: {'theme': 'neutral'}}%%
-graph TD
-    MKT[API marketplace] --> M1[Data crunching module]
-    MKT --> M2[Retail visualization module]
-    MKT --> M3[Planning engine module]
-    MKT --> M4[Future modules]
-
-    M1 --> OWN[Customer's own UI or third-party front-end]
-    M2 --> OWN
-    M3 --> OWN
-```
-
 ### What changed
 
 | Dimension | Before | After |
