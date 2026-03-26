@@ -34,7 +34,7 @@ graph TB
         subgraph Tier3["Tier 3 — remaining (months 8-12)"]
             direction LR
             CFG["Config mgmt<br/><i>Tenant-scoped</i>"]
-            MORE["+14 services<br/><i>All independent</i>"]
+            MORE["Other services<br/><i>All independent</i>"]
         end
     end
 
