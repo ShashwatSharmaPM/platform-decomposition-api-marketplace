@@ -1,6 +1,3 @@
-# platform-decomposition-api-marketplace
-Case study: Breaking a monolith into 50+ APIs and launching a modular marketplace. Grew from 3-person team to 18. Multi-billion dollar market entry.
-
 # Platform Decomposition + API Marketplace Launch
 
 > Breaking a monolith into 50+ APIs, launching a modular marketplace, and opening up an entirely new market segment, all driven bottom-up from a 3-person team.
