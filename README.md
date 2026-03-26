@@ -1,12 +1,12 @@
 # Platform Decomposition + API Marketplace Launch
 
-> Breaking a monolith into 50+ APIs, launching a modular marketplace, and opening up an entirely new market segment, all driven bottom-up from a 3-person team.
+> Breaking a monolith into 20 odd services, launching a modular API PaaS marketplace, and opening up an entirely new market segment, all driven bottom-up starting with a 3-person team, expanding to 18.
 
 ## Context
 
 **Company type**: Global supply chain SaaS platform (demand and supply planning)
 **My role**: Lead Product Manager, APIs
-**Team**: Started with 3 (me, a senior architect, a junior developer). Grew to 18 (15 devs, 3 PMs).
+**Team**: Started with 3 (me, a senior architect, a junior developer). Grew to 18 (me leading 14 devs and 3 PMs).
 **Timeline**: ~1 year for the core decomposition; marketplace launched alongside
 
 ---
@@ -42,10 +42,10 @@ Started with 3 people. We began owning services one by one, first just triaging 
 
 Once we owned the middle layer, I could see two things clearly:
 
-1. If we decomposed the monolith into independent microservices, each service could scale independently. No more one heavy job killing the entire platform.
+1. If we broke down the monolith into independent microservices, each service could scale independently. No more one heavy job killing the entire platform.
 2. If we added a security/authentication layer on top of those microservices, we could expose them externally as a modular API marketplace.
 
-One initiative, two outcomes. I built a 1-year plan covering:
+One initiative, two outcomes. I built a 1.5 year plan covering:
 - Which services to isolate first (prioritized by customer pain and revenue risk)
 - The security layer architecture (auth per service, not per monolith)
 - Revenue projections for the API marketplace (validated with the sales team from the two enterprise RFIs)
