@@ -17,21 +17,21 @@ graph TB
 
     subgraph Services["Independent microservices (~20 services, ~50+ APIs)"]
         direction TB
-        subgraph Tier1["Tier 1 — decomposed first (months 1-4)"]
+        subgraph Tier1["Tier 1 (months 1-4)"]
             direction LR
             JS["Job scheduler<br/><i>Own compute</i>"]
             DC["Data crunching<br/><i>Own compute</i>"]
             MSG["Messaging<br/><i>Own SMTP</i>"]
         end
 
-        subgraph Tier2["Tier 2 — decomposed next (months 4-8)"]
+        subgraph Tier2["Tier 2 (months 4-8)"]
             direction LR
             UM["User mgmt<br/><i>Self-service RBAC</i>"]
             RV["Retail viz<br/><i>Image tunneling</i>"]
             RPT["Reporting<br/><i>Own compute</i>"]
         end
 
-        subgraph Tier3["Tier 3 — remaining (months 8-12)"]
+        subgraph Tier3["Tier 3 (months 8-12)"]
             direction LR
             CFG["Config mgmt<br/><i>Tenant-scoped</i>"]
             MORE["Other services<br/><i>All independent</i>"]
@@ -104,7 +104,7 @@ graph TB
 ## Key architectural decisions
 
 **Why the monolith became an orchestrator, not deleted:**
-Rewriting everything from scratch would have taken 2+ years and introduced massive risk. Keeping the monolith as a thin routing layer meant we could decompose incrementally, one service at a time, with rollback capability at each step.
+Rewriting everything from scratch would have taken 2+ years and introduced massive risk. Keeping the monolith as a thin routing layer meant we could isolate services incrementally, one at a time, with rollback capability at each step.
 
 **Why auth per service, not a central auth gateway:**
 Central auth creates a single point of failure and doesn't support the marketplace model (different clients need different service-level permissions). Per-service auth meant we could grant marketplace customers access to specific modules without exposing the full platform.
