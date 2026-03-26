@@ -42,19 +42,6 @@ graph TD
     M3 --> OWN
 ```
 
-### How the validator service works
-
-```mermaid
-%%{init: {'theme': 'neutral'}}%%
-graph TD
-    JOB_A[Job A — demand recalculation, APAC] --> VAL[Validator service]
-    JOB_B[Job B — supply planning, Europe] --> VAL
-
-    VAL --> CHK{Same data objects?}
-    CHK -->|Yes — conflict| BLOCK[Block second job until first completes]
-    CHK -->|No — safe| ALLOW[Allow both to run in parallel]
-```
-
 ### What changed
 
 | Dimension | Before | After |
